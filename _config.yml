@@ -1,5 +1,28 @@
-title: Modernist theme
-description: Modernist is a theme for GitHub Pages.
-show_downloads: true
-google_analytics:
-theme: jekyll-theme-modernist
+# ==========================================================================
+# Site Settings
+# ==========================================================================
+title: Tadiwanashe Ben | Portfolio
+email: bentadiwa18@gmail.com
+description: >- # This prints a nice bio in the footer or homepage
+  Data Scientist & Analyst specializing in predictive modeling, statistical 
+  analysis, and translating complex datasets into actionable business intelligence.
+
+# ==========================================================================
+# Author Details
+# ==========================================================================
+author: Tadiwanashe Ben
+role: Data Scientist & Analyst
+location: Zimbabwe
+
+# ==========================================================================
+# Social Links (Leave blank if you don't want to show them)
+# ==========================================================================
+github_username: tadiwaaa
+linkedin_username: www.linkedin.com/in/tadiwanashe-ben-6b75a6213
+twitter_username: 
+
+# ==========================================================================
+# Build Settings (Do not change these unless your template specifies)
+# ==========================================================================
+markdown: kramdown
+theme: modernist # Change this if your downloaded template uses a different theme name
