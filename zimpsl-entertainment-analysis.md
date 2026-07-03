@@ -1,4 +1,4 @@
-'---
+---
 layout: post
 title: "The ZimPSL Ultimate Entertainers: A Data-Driven Tactical Analysis"
 description: "Web scraping and analyzing historical football data to uncover the most entertaining teams in Zimbabwe."
