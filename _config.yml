@@ -25,4 +25,5 @@ twitter_username:
 # Build Settings (Do not change these unless your template specifies)
 # ==========================================================================
 markdown: kramdown
-theme: modernist # Change this if your downloaded template uses a different theme name
+theme: jekyll-theme-modernist # Change this if your downloaded template uses a different theme name
+show_downloads: true
