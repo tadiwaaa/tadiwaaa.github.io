@@ -55,4 +55,6 @@ This matrix separates the **Pragmatists** (low scoring, low conceding) from the 
 
 ## 💻 6. Access the Code
 The complete Python data engineering pipeline (including BeautifulSoup scraping and Pandas cleaning) is hosted directly in this repository:
-[**View the fully rendered Jupyter Notebook**](https://nbviewer.org/github/tadiwaaa/tadiwaaa.github.io/blob/main/zimpsl_scraper.ipynb)
+## 💻 6. Access the Code
+The complete Python data engineering pipeline (including BeautifulSoup scraping and Pandas cleaning) is hosted directly in this repository:
+[**View the Jupyter Notebook**](https://github.com/tadiwaaa/tadiwaaa.github.io/blob/main/zimpsl_scraper.ipynb)
