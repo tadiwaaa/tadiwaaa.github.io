@@ -1,6 +1,6 @@
 ---
-layout: post
-title: "The ZimPSL Ultimate Entertainers: A Data-Driven Tactical Analysis"
+layout: default
+title: "ZimPSL Entertainment Index: A Sports Analytics Case Study"
 description: "Web scraping and analyzing historical football data to uncover the most entertaining teams in Zimbabwe."
 date: 2026-07-03
 categories: [Data Analytics, Web Scraping, Sports Analytics]
