@@ -39,14 +39,14 @@ $$\text{Entertainment Index} = \text{Average Goals Scored} (GF) + \text{Average 
 ### The Top 10 Ultimate Entertainers
 This stacked bar chart breaks down the direct distribution of goals scored versus goals conceded. **CAPS United** emerged as the ultimate entertainer of Zimbabwean football, averaging a massive **2.25 total goals per match** across 170 games. They tightly balance high attacking output with a fragile defensive line.
 
-![ZimPSL Total Goals Per Game](/images/entertainers-index.png)
+![ZimPSL Total Goals Per Game](entertainers-index.png)
 
 ### The Historical Tactical Quadrant
 By plotting Attacking Threat (Goals Scored) on the X-axis against Defensive Solidity (Goals Conceded - inverted) on the Y-axis, we can cluster the league into four distinct tactical profiles. 
 
 This matrix separates the **Pragmatists** (low scoring, low conceding) from the absolute **Entertainers** (CAPS United, Triangle United), while highlighting just how dominant **The Elites** (FC Platinum and Ngezi Platinum) are in maintaining both attack and defense.
 
-![ZimPSL Historical Tactical Quadrant](/images/tactical-quadrant.png)
+![ZimPSL Historical Tactical Quadrant](tactical-quadrant.png)
 ---
 
 ## 💡 5. Analytical Conclusions
