@@ -39,14 +39,13 @@ $$\text{Entertainment Index} = \text{Average Goals Scored} (GF) + \text{Average 
 ### The Top 10 Ultimate Entertainers
 This stacked bar chart breaks down the direct distribution of goals scored versus goals conceded. **CAPS United** emerged as the ultimate entertainer of Zimbabwean football, averaging a massive **2.25 total goals per match** across 170 games. They tightly balance high attacking output with a fragile defensive line.
 
-![ZimPSL Total Goals Per Game](images/entertainers-index.png)
-
+![ZimPSL Total Goals Per Game](https://raw.githubusercontent.com/tadiwaaa/tadiwaaa.github.io/main/images/entertainers-index.png)
 ### The Historical Tactical Quadrant
 By plotting Attacking Threat (Goals Scored) on the X-axis against Defensive Solidity (Goals Conceded - inverted) on the Y-axis, we can cluster the league into four distinct tactical profiles. 
 
 This matrix separates the **Pragmatists** (low scoring, low conceding) from the absolute **Entertainers** (CAPS United, Triangle United), while highlighting just how dominant **The Elites** (FC Platinum and Ngezi Platinum) are in maintaining both attack and defense.
 
-![ZimPSL Historical Tactical Quadrant](images/tactical-quadrant.png)
+![ZimPSL Historical Tactical Quadrant](https://raw.githubusercontent.com/tadiwaaa/tadiwaaa.github.io/main/images/tactical-quadrant.png)
 
 ---
 
@@ -55,4 +54,5 @@ This matrix separates the **Pragmatists** (low scoring, low conceding) from the 
 2. **The Elite Benchmark:** FC Platinum manages an incredible win-rate profile because they maximize attacking returns while maintaining the tightest defensive structure in modern ZimPSL history.
 
 ## 💻 6. Access the Code
-The complete Python scripts for web scraping, data cleaning, and generating the Matplotlib/Seaborn visualizations are available in the repository files above.
+The complete Python data engineering pipeline (including BeautifulSoup scraping and Pandas cleaning) is hosted directly in this repository:
+[**View the Jupyter Notebook**](https://github.com/tadiwaaa/tadiwaaa.github.io/blob/main/zimpsl_scraper.ipynb)
