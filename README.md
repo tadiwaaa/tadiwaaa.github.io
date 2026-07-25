@@ -1,9 +1,31 @@
 # tadiwaben.github.io
 
 ## 📁 Featured Projects
+---
 
-* **[The ZimPSL Ultimate Entertainers: Sports Analytics & Web Scraping](./zimpsl-entertainment-analysis.html)**
-  *Extracted 8 years of historical football data using Python to engineer a custom entertainment index and visualize tactical team profiles.*
+## ⚽ The ZimPSL Ultimate Entertainers: Sports Analytics & Web Scraping
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat&logo=python&logoColor=white)
+![Web Scraping](https://img.shields.io/badge/Web%20Scraping-BeautifulSoup4-FF6F00?style=flat)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Engineering-150458?style=flat&logo=pandas&logoColor=white)
+![Data Scope](https://img.shields.io/badge/Data%20Scope-2017--2024-10B981?style=flat)
+
+A sports analytics pipeline engineered to look beyond standard points tables and mathematically measure spectator value ("entertainment index") across 8 seasons of the Zimbabwe Premier Soccer League (ZimPSL).
+
+### 📊 Project Highlights
+* **Automated Data Scraping**: Built custom Python extractors parsing 101 team-season records from historical league tables (2017–2024).
+* **Feature Engineering**: Standardized goal rates, match volatility, and defensive risk metrics into a unified **Chaos & Entertainment Index**.
+* **Tactical Profiling**: Mapped team playstyles into tactical quadrant matrices to isolate high-stakes, entertaining sides from low-volatility defensive teams.
+
+### 🖼️ Visual Insights Preview
+<p main="center">
+  <img src="tactical-quadrant.png" alt="ZimPSL Tactical Quadrant" width="100%" style="border-radius: 8px; border: 1px solid #334155;">
+</p>
+### 🛠️ Tech Stack
+`Python` • `BeautifulSoup` • `Pandas` • `NumPy` • `Matplotlib / Seaborn`
+
+[📊 Read Full Analysis Report](./zimpsl-entertainment-analysis.md) | [💻 View Scraper Code](./zimpsl_scraper.ipynb)
+
+---
 
 ### ZimAuto Valuation Engine
 ## 🚗 ZimAuto: End-to-End Car Valuation & Negotiation Engine
