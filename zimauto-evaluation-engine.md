@@ -9,7 +9,6 @@ categories: [Machine Learning, Price Analytics, Web Scraping, Python, XGBoost]
 # 🚗 ZimAuto: End-to-End Car Valuation & Arbitrage Engine
 
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![XGBoost](https://img.shields.io/badg                        e/XGBoost-1.7+-22C55E?style=for-the-badge)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![Gradio](https://img.shields.io/badge/Gradio-UI-FF7C00?style=for-the-badge&logo=gradio&logoColor=white)
 ![Optuna](https://img.shields.io/badge/Optuna-Hyperparameter--Tuning-blue?style=for-the-badge)
