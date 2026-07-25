@@ -45,4 +45,4 @@ An institutional machine learning application designed to resolve pricing opacit
 
 ### 🛠️ Key Technologies
 `Python` • `BeautifulSoup` • `XGBoost` • `Optuna` • `Scikit-Learn` • `Gradio` • `Render`
-👉 [View Details](https://github.com/tadiwaaa/ZimAuto-Valuation-Engine/blob/main/README.md) | [Live Demo](zimauto-valuation-engine.onrender.com)
+👉 [View Details]((https://github.com/tadiwaaa/tadiwaaa.github.io/blob/main/zimauto-evaluation-engine.md)) | [Live Demo](zimauto-valuation-engine.onrender.com)
