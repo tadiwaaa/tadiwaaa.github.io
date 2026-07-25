@@ -20,6 +20,7 @@ A sports analytics pipeline engineered to look beyond standard points tables and
 <p main="center">
   <img src="tactical-quadrant.png" alt="ZimPSL Tactical Quadrant" width="100%" style="border-radius: 8px; border: 1px solid #334155;">
 </p>
+
 ### 🛠️ Tech Stack
 `Python` • `BeautifulSoup` • `Pandas` • `NumPy` • `Matplotlib / Seaborn`
 
