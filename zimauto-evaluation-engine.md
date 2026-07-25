@@ -117,7 +117,6 @@ To force the algorithm to evaluate relative percentage errors rather than raw do
 
 To differentiate genuine market bargains from typos or wrecked vehicles, a statistical residual governance engine was built using Z-score classification:
 
-$$Z = \frac{\text{Actual Price} - \text{Predicted Price}}{\sigma_{\text{residuals}}}$$
 
 | Z-Score Range | System Classification | Actionable Meaning |
 | :--- | :--- | :--- |
@@ -135,7 +134,4 @@ The final model was compiled with serialized encoders (`joblib`) and deployed vi
 * **AI Thought Logs**: Visual breakdown showing base market pivot, age modifiers, mileage wear penalties, and brand adjustments.
 * **Target Bargaining Bounds**: Automated calculation of target purchase goals (floor) and maximum walking ceilings.
 
-```python
-# Launch Configuration for Production
-if __name__ == "__main__":
-    demo.launch(server_name="0.0.0.0", server_port=int(os.environ.get("PORT", 7860)))
+
