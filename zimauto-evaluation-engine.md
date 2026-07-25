@@ -33,7 +33,7 @@ The objective of this project was to build an end-to-end, data-driven machine le
 ### A. Chronological Depreciation Patterns
 Analyzing vehicle price against manufacturing year and age reveals strong exponential depreciation dynamics. Newer vehicles lose value rapidly within their first five years before stabilizing into a steady baseline curve.
 
-![Price vs Year: Understanding Vehicle Depreciation](g3.jpg)
+![Price vs Year: Understanding Vehicle Depreciation](g3.png)
 
 > **Key Takeaway**: Vehicle prices correlate positively with year ($r = 0.476$). The average price jumps significantly for post-2020 inventory due to import tariff structures and newer technology baselines.
 
@@ -42,7 +42,7 @@ Analyzing vehicle price against manufacturing year and age reveals strong expone
 ### B. Usage-Based Depreciation (Mileage Analysis)
 Cumulative mileage acts as a continuous penalty against asset valuation. However, value loss per kilometer decays exponentially—the highest drop in value occurs within the first $30,000\text{ km}$.
 
-![Price vs Mileage Depreciation](g4.jpg)
+![Price vs Mileage Depreciation](g4.png)
 
 ---
 
@@ -63,14 +63,14 @@ Automatic diesel configurations dominate the upper price brackets, driven by hea
 ### E. Mileage Velocities & Usage Relationships
 Calculating the annual usage rate ($\text{Annual Mileage} = \frac{\text{Mileage}}{\text{Age}}$) provides crucial insights into how intensely vehicles are driven relative to national baselines.
 
-![Mileage Relationships and Usage Patterns](g7.jpg)
+![Mileage Relationships and Usage Patterns](g7.png)
 
 ---
 
 ### F. Brand-Specific Value Retention Curves
 Different vehicle brands retain value at vastly different rates after 5 years of operation. Commercial brands like **Isuzu** retain up to **63.1%** of their original value, whereas luxury sedans suffer steep 5-year drops.
 
-![Brand Specific Depreciation Analysis](g9.jpg)
+![Brand Specific Depreciation Analysis](g9.png)
 
 ---
 
@@ -84,14 +84,14 @@ By mapping vehicle cost per operational year across market segments (**Luxury**,
 ### H. Multivariate 3D Depreciation Surfaces
 A dual-axis linear model is insufficient to capture price behavior. Mapping Price against Year and Mileage simultaneously reveals a non-linear regression surface.
 
-![3D Price Surface Analysis](g11.jpg)
+![3D Price Surface Analysis](g11.png)
 
 ---
 
 ### I. Feature Correlation & Structure
 A comprehensive correlation matrix confirms that while Year ($r = 0.476$) and Vehicle Age ($r = -0.476$) are strong linear drivers, interaction effects with Mileage and Market Segment require gradient-boosted decision trees.
 
-![Multivariate Correlation Matrix](g12.jpg)
+![Multivariate Correlation Matrix](g12.png)
 
 ---
 
