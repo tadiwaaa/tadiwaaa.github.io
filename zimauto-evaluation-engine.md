@@ -105,32 +105,38 @@ This caused the baseline model to heavily overvalue low-cost, budget vehicles:
 ![The Overvaluation Problem](g13.png)
 
 ### The Mathematical Solution: Target Log Transformation
-To force the algorithm to evaluate relative percentage errors rather than raw dollar magnitudes, we applied a logarithmic transformation to the target variable:
+To force the algorithm to evaluate relative percentage errors rather than raw dollar magnitudes, we applied a logarithmic transformation to the target variable. The XGBoost regressor was retrained on $y_{\text{transformed}}$ and evaluated by applying the inverse exponential function ($\text{expm1}$) to predictions.
 
-$$y_{\text{transformed}} = \log(1 + \text{Price\_USD})$$
+### Model Performance Summary
+* **Variance Explained ($R^2$)**: **0.790** (~79.0% of market price variance explained)
+* **Mean Absolute Error (MAE)**: **~\$5,112.93 USD** across all price brackets
+* **Evaluation Alignment**: Low-end vehicle valuations mapped smoothly to true market benchmarks (\$2,000 – \$6,000 range).
 
-The XGBoost regressor was retrained on $y_{\text{transformed}}$ and evaluated by applying the inverse exponential function ($\text{expm1}$) to predictions:
+---
 
-$$\hat{y}_{\text{dollars}} = \exp(\hat{y}_{\text{transformed}}) - 1$$
+## 🛡️ 4. Statistical Residual Governance & Arbitrage Rules
+
+To differentiate genuine market bargains from typos or wrecked vehicles, a statistical residual governance engine was built using Z-score classification:
+
+$$Z = \frac{\text{Actual Price} - \text{Predicted Price}}{\sigma_{\text{residuals}}}$$
+
+| Z-Score Range | System Classification | Actionable Meaning |
+| :--- | :--- | :--- |
+| $Z \ge +1.5$ | ❌ Overpriced | Asset listed above fair market trend line |
+| $-1.2 \le Z < +1.5$ | 🟢 Standard Market Value | Fair competitive pricing tier |
+| $-2.5 \le Z < -1.2$ | 🔥 Verified High-Value Deal | Strong arbitrage opportunity |
+| $Z < -2.5$ | ⚠️ High Risk / Deep Discount | Suspected mechanical damage, salvage title, or listing typo |
+
+---
+
+## 🚀 5. Interactive Dashboard Deployment
+
+The final model was compiled with serialized encoders (`joblib`) and deployed via a dynamic **Gradio** web application featuring:
+* **Cascading Dynamic Dropdowns**: Selecting a vehicle brand (e.g., *Toyota*) dynamically filters the model choices (e.g., *Hilux*, *Prado*, *Aqua*).
+* **AI Thought Logs**: Visual breakdown showing base market pivot, age modifiers, mileage wear penalties, and brand adjustments.
+* **Target Bargaining Bounds**: Automated calculation of target purchase goals (floor) and maximum walking ceilings.
 
 ```python
-# Retraining Pipeline with Log Transformation
-import numpy as np
-from xgboost import XGBRegressor
-
-# Log-transform target variable
-y_train_log = np.log1p(y_train)
-
-# Fit XGBoost Regressor
-xgb_log = XGBRegressor(
-    n_estimators=300,
-    max_depth=6,
-    learning_rate=0.05,
-    subsample=0.8,
-    random_state=42
-)
-xgb_log.fit(X_train, y_train_log)
-
-# Predict and inverse-transform
-log_preds = xgb_log.predict(X_test)
-final_dollar_preds = np.expm1(log_preds)
+# Launch Configuration for Production
+if __name__ == "__main__":
+    demo.launch(server_name="0.0.0.0", server_port=int(os.environ.get("PORT", 7860)))
